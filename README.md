@@ -8,7 +8,6 @@ This project covers all the requirement given in the coding exercise and achieve
 * [Requirements](#requirements)
 * [Setup](#setup)
 * [Screenshot](#screenshot)       
-* [Note](#note)
 
 ## Test approach
 
@@ -46,21 +45,18 @@ In order to utilize this project you need to have the following installed locall
 
 The project is broken into separate modules for user story #1 and user story #2
 
-* Clone the repository from git using git clone url command.
+* Clone the repository from git using git clone url command or download the project and Unzip the project folder  
+* Import the project Transportly in Eclipse as a existing maven project 
+Browse the folder and select the Transportly project and check the pom.xml and click on finish
+If you see any error, update the Transportly project or proceed to next step
+Navigate through src/main/java/Airtek/Transport_Ly to find the utilities related to the test.
+Navigate through src/main/java/Airtek/Transport_Ly/tasks/Result to run the test
 * Open the project **Transportly** in Eclipse as a maven project using pom.xml
 
-**Java Application**
+**To Run the Test**
 
 ```
-* From Project Explorer, navigate through PathFactoryAutomationTest and run the file "testng.xml" as TestNG Suite;
-```
-or
-**Maven**
-
-```
-* From Project Explorer, right click and run as Maven clean
-* Proceed with maven install
-```
+* From Project Explorer, navigate through Transportly and goto src/main/java/Airtek/Transport_Ly/tasks folder and then run the file "Results.java" as Java Application;
 
 ## Screenshot of Test sample output
 ![screenshot of the output](/screenshots/testresultssample.png)
