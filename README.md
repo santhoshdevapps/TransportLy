@@ -47,11 +47,13 @@ The project is broken into separate modules for user story #1 and user story #2
 
 * Clone the repository from git using git clone url command or download the project and Unzip the project folder  
 * Import the project Transportly in Eclipse as a existing maven project 
-Browse the folder and select the Transportly project and check the pom.xml and click on finish
-If you see any error, update the Transportly project or proceed to next step
-Navigate through src/main/java/Airtek/Transport_Ly to find the utilities related to the test.
-Navigate through src/main/java/Airtek/Transport_Ly/tasks/Result to run the test
+* Browse the folder and select the Transportly project and check the pom.xml and click on finish
+* If you see any error, update the Transportly project or proceed to next step
+* Navigate through src/main/java/Airtek/Transport_Ly to find the utilities related to the test.
+* Navigate through src/main/java/Airtek/Transport_Ly/tasks/Result to run the test
 * Open the project **Transportly** in Eclipse as a maven project using pom.xml
+
+**Note**: If you are using JRE System Library less than 1.7, kindly update it to version 1.7 or more manually. If not use the eclipse autosuggestion to install the JRE library to 1.7 or more.
 
 **To Run the Test**
 
