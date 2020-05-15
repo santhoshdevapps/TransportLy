@@ -60,5 +60,5 @@ Navigate through src/main/java/Airtek/Transport_Ly/tasks/Result to run the test
 ```
 
 ## Screenshot of Test sample output
-![screenshot of the output](/screenshots/testresultssample.png)
+![screenshot of the output](/screenshot/testresultssample.png)
 
