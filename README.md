@@ -7,7 +7,7 @@ This project covers all the requirement given in the coding exercise and achieve
 * [Libraries and Frameworks](#libraries-and-frameworks)
 * [Requirements](#requirements)
 * [Setup](#setup)
-* [Screenshot](#screenshot)       
+* [Screenshot](#screenshot-of-test-sample-output)
 
 ## Test approach
 
@@ -56,7 +56,9 @@ Navigate through src/main/java/Airtek/Transport_Ly/tasks/Result to run the test
 **To Run the Test**
 
 ```
-* From Project Explorer, navigate through Transportly and goto src/main/java/Airtek/Transport_Ly/tasks folder and then run the file "Results.java" as Java Application;
+* From Project Explorer, navigate through Transportly  
+* Goto src/main/java/Airtek/Transport_Ly/tasks folder
+* Run the file "Results.java" as Java Application;
 ```
 
 ## Screenshot of Test sample output
