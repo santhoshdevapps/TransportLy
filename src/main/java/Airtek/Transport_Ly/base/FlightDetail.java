@@ -1,7 +1,11 @@
 package Airtek.Transport_Ly.base;
 
 import Airtek.Transport_Ly.utils.Constants;
-
+/**
+ * This class contains flight object
+ * @author santhoshdamodharan
+ *
+ */
 public class FlightDetail {
 	private int flightNumber;
 	private String departure = Constants.DEPARTURE;

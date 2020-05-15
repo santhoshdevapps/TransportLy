@@ -1,5 +1,7 @@
 package Airtek.Transport_Ly.base;
-
+/*
+ * this class contains cargo detail object
+ */
 public class CargoFlight extends FlightDetail {
 
 	public CargoFlight(int flightNumber, String arrival, int day) {

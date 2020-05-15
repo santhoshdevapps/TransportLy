@@ -12,21 +12,27 @@ import Airtek.Transport_Ly.utils.Constants;
 import Airtek.Transport_Ly.utils.OrderComparator;
 import Airtek.Transport_Ly.utils.Parser;
 
+/**
+ * User Story - 2
+ * This is used to generate flight itineraries by scheduling a batch of orders.
+ * @author santhoshdamodharan
+ *
+ */
 public class OrderScheduling {
 
 	OrderDetail orderDetail;
 	Parser parse;
 
+	
 	public void scheduling() {
-		// user story - 2
 		
-
 		// parse the json file to json object
 		parse = new Parser();
 		JSONObject orderDetailJSON = parse.parse(Constants.FILE_PATH + Constants.FILE_NAME);
 
 		ArrayList<OrderDetail> orders = new ArrayList<>();
 
+		// iterate the json object and get details
 		for (Object keys : orderDetailJSON.keySet()) {
 
 			String orderNumber = String.valueOf(keys);
@@ -36,7 +42,7 @@ public class OrderScheduling {
 			orderDetail = new OrderDetail(orderNumber, destination, priority);
 			orders.add(orderDetail);
 		}
-
+		// Sort the orders Array to ascending based on order number
 		Collections.sort(orders, new OrderComparator());
 		;
 		for (OrderDetail order : orders) {
@@ -49,7 +55,7 @@ public class OrderScheduling {
 							&& flightDetail.getFlightCapacity() < Constants.FLIGHT_CAPACITY) {
 
 						flightDetail.setFlightCapacity(flightDetail.getFlightCapacity());
-
+						// Print the output
 						System.out.println("order: " + order.getOrderNumber() + ", flightNumber: "
 								+ flightDetail.getFlightNumber() + ", departure: " + flightDetail.getDeparture()
 								+ ", arrival: " + flightDetail.getArrival() + ", day: " + flightDetail.getDay());
@@ -58,6 +64,7 @@ public class OrderScheduling {
 
 				}
 			} else {
+				// Show the result when flight is not scheduled
 				System.out.println("order: " + order.getOrderNumber() + ", flightNumber: not scheduled");
 
 			}

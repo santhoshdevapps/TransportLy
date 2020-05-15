@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import Airtek.Transport_Ly.base.CargoFlight;
 import Airtek.Transport_Ly.utils.Constants;
 
+/**
+ * User story -1 load a flight schedule
+ * @author santhoshdamodharan
+ */
 public class FlightScheduling {
 
 	int flightNumber = 1;
